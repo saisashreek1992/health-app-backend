@@ -1,0 +1,25 @@
+{
+  "name": "health-app-backend",
+  "version": "1.0.0",
+  "description": "backend of health app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saisashreek1992/health-app-backend.git"
+  },
+  "author": "nabeel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saisashreek1992/health-app-backend/issues"
+  },
+  "homepage": "https://github.com/saisashreek1992/health-app-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
