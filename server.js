@@ -22,6 +22,10 @@ app.use((req, res, next) => {
     next();
 });
 
+const connectDB = require('./db')
+
+connectDB();
+
 app.get('/', (req, res, ) => {
     res.send('Backend of Health app is Working Fine.');
 });
@@ -29,7 +33,7 @@ app.get('/', (req, res, ) => {
 //Auth routes
 app.use('/api/auth', require('./routes/auth'));
 
-app.use('/api', require('./routes/index'))
+app.use('/api/v1', require('./routes/index'))
 
 
 const PORT = process.env.PORT || 5000;

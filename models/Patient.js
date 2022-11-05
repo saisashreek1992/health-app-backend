@@ -1,0 +1,61 @@
+const mongoose = require('mongoose')
+
+const Patient = new mongoose.Schema({
+    doctorId: {
+        type: String,
+        required: true
+    },
+    logo: {
+        type: String,
+    },
+    phone: {
+        type: Number,
+        required: true
+    },
+    name: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    dob: {
+        type: Date,
+        required: true
+    },
+    gender: {
+        type: String,
+        required: true
+    },
+    height: {
+        type: Number
+    },
+    weight: {
+        type: Number
+    },
+    caretakers_name: {
+        type: String
+    },
+    caretakers_relation: {
+        type: String
+    },
+    caretakers_phone: {
+        type: Number
+    },
+    caretakers_time: {
+        type: String
+    },
+    health_plan: {
+        type: String
+    },
+    health_plan_date: {
+        type: Date
+    },
+    team: {
+        type: String
+    },
+
+})
+
+module.exports = mongoose.model('patient', Patient)
