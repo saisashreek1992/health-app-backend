@@ -55,7 +55,21 @@ const Patient = new mongoose.Schema({
     team: {
         type: String
     },
-
+    amount: {
+        type: Number
+    },
+    payment_mode: {
+        type: String
+    },
+    payment_date: {
+        type: Date
+    },
+    ref_id: {
+        type: String
+    },
+    next_payment_date: {
+        type: Date
+    }
 })
 
 module.exports = mongoose.model('patient', Patient)
